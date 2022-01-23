@@ -264,6 +264,7 @@ ul {
 .head-link-item{
     margin-right: 50px;
 }
+/* ----------------FOOTER----------------------------------------------- */
 .footer-box{
     background-color: var(--background-color);
     /* max-width: 1600px; */
@@ -279,7 +280,60 @@ ul {
 .fl-con{
     margin-top: 9px;
 }
-
+.footer-sign-form{
+    display: flex;
+    margin-left: 93px;
+    margin-top: 12px;
+}
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+.footer-form-text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.footer-form-input{
+    width: 358px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-button{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    transition: var(--transition);
+    margin-top: 36px;
+}
+/* ---------------------TOJE-IZ-PORTFOLIO------------------------------ */
 .group{
     display: flex;
     flex-wrap: wrap;
@@ -532,6 +586,7 @@ ul {
 }
 .join{
     margin-left: 70px;
+    margin-top: 12px;
 }
 .clients-title{
     font-weight: bold;
@@ -599,7 +654,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: 0.8s;    
+    transition: 0.8s;  
+    padding: 40px;  
 }
 .btn-close {
     cursor: pointer;
@@ -618,4 +674,122 @@ ul {
 }
 .close-icon{
     fill: black;
+}
+.btn-close:hover .close-icon,
+.btn-close:focus .close-icon{
+    fill: var(--accent-color);
+}
+.modal-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+.modal-form{
+    display: block;
+}
+.modal-form-item{
+    margin-bottom: 10px;
+}
+.modal-form-label{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.modal-form-input{
+    position: relative;
+    color: #212121;
+    transition: var(--transition);
+}
+.modal-form-input-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+    padding-left: 42px;
+}
+.modal-form-input-icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    transition: var(--transition);
+}
+.modal-form-input-input:hover,
+.modal-form-input-input:focus,
+.modal-form-input-text-area:focus,
+.modal-form-input-text-area:hover,
+.modal-form-input:hover,
+.modal-form-input:focus{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+.modal-form-input-input:focus + .modal-form-input-icon {
+    fill: var(--accent-color);
+}
+.modal-form-input-text-area{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+}
+.agreement{
+    display: flex;
+}
+.agreement-label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.agreement-link{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.agreement-checkbox{
+    margin-top: 5px;
+}
+.agreement-span{
+    margin-left: 9px;
+    margin-right: 5px;
+}
+.modal-btn{
+    display: flex;
+    justify-content: center;
+}
+.modal-button{
+    min-width: 200px;
+    max-height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    transition: var(--transition);
 }
