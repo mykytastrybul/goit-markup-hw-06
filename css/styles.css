@@ -702,6 +702,7 @@ ul {
     color: #757575;
 }
 .modal-form-input{
+    margin-top: 4px;
     position: relative;
     color: #212121;
     transition: var(--transition);
@@ -752,6 +753,8 @@ ul {
     display: flex;
 }
 .agreement-label{
+    position: relative;
+    left: 16px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -765,7 +768,29 @@ ul {
     color: var(--accent-color);
     text-decoration: underline;
 }
+.agreement-icon{
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.agreement-checkbox:checked  +  .agreement-icon{
+    border: none;
+    background-color: var(--accent-color);
+    background-image: url(./images/symbol-defs04.svg#icon-check);
+    background-size: contain;
+
+}
 .agreement-checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
     margin-top: 5px;
 }
 .agreement-span{
